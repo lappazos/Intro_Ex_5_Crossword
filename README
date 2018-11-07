@@ -1,0 +1,48 @@
+lioraryepaz 206240996 Lior Paz, eran.gilead 203344130 Eran Gilead
+
+=============================
+=  README for ex5: 3D_Crossword  =
+=============================
+
+
+==================
+=  Description:  =
+==================
+first of all, let us guarantee you that our code is the best there is, the most
+clear, efficient, modular, organized, properly styled and just - the best!!!
+
+3 files - crossword, crossword3d and initiate - our main file.
+
+We tried to create the most modular code possible - we divided all of the work
+into different main functions, without any code repeating.
+we actually chose to perform as the following - for every set of directions we
+created different matrix, running on 2 main search functions - east & west.
+east west - basic version
+north south - columns version
+north-east south-west - diagonal version
+south-east north-west - diagonal 2 version
+we actually look what directions the user has requested, then create the proper
+mat versions, then create all of the possible combinations one time only, then
+delete the words we arent looking for fromt hat list, then counting and
+writing.
+
+once you run the script, first he will call a different script - initiate.
+this is the main file where the "logistics" is implemented, all of the
+functions that are actually common and extacly the same for both parts.
+ - open files, writing to files, checking which words are there from all of the
+possible combinations, etc.
+
+the crossword file is where we create all of the possible combinations in the
+world for a certain mat - only 2 "search" functions - east and west". the rest
+of the combinations is being done by transforming the matrix itself to a
+different version.
+
+the crossword3d file is where the big 3d matrix is divided and transformed into
+different directional matrix. then, for every mat, separately, we implement
+crossword func from crossword file.
+
+======================
+=  Special Comments  =
+======================
+the sys-arg and if"__main__" is still not perfectly clear - a few good examples
+in class might be good.
